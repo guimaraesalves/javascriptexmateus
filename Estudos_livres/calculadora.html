@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Calculadora</title>
+    <style>
+          body {
+            font: normal 18pt Arial;
+            background-color: paleturquoise;
+        }
+
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#res {
+            margin-top: 40px;
+        }
+      
+    </style>
 </head>
 <body>
+    
+        <h1>Calculadora JavaScript</h1>
+        <p><strong>Primeiro Número:</strong>    <input type="number" name="txtn1" id="txtn1"></p> 
+        <P><strong>Segundo Número:</strong>     <input type="number" name='txtn2' id="txtn2"></P>
+        <P><input type="button" value="+" onclick="somar()">
+        <input type="button" value="-" onclick="subtrair()">
+        <input type="button" value="x" onclick="multiplicar()">
+        <input type="button" value="/" onclick="dividir()">
+    
+
+    <div id='res'>
+
+    </div>
+
+        <script>
+            function somar() {
+                var num1 = window.document.querySelector("input#txtn1")
+                var num1 = Number(txtn1.value)
+                var num2 = window.document.querySelector('input#txtn2')
+                var num2 = Number(txtn2.value)
+                var soma = num1 + num2
+                var res = window.document.querySelector('Div#res')
+                res.innerHTML = `<p>${num1} + ${num2} = <strong>${soma}</strong>`
+            }
+
+            function subtrair(){
+                var num1 = document.querySelector('input#txtn1')
+                var num1 = Number(txtn1.value)
+                var num2 = document.querySelector('input#txtn2')
+                var num2 = Number(txtn2.value)
+                var sub = num1 - num2
+                var res = window.document.querySelector('Div#res')
+                res.innerHTML = `<p>${num1} - ${num2} = <strong>${sub}</strong>`
+
+            }
+
+            function multiplicar() {
+                var n1 = window.document.querySelector('input#txtn1')
+                var n1 = Number(txtn1.value)
+                var n2 = window.document.querySelector('input#txtn2')
+                var n2 = Number(txtn2.value)
+                var mult = n1 * n2
+                var res = window.document.querySelector('div#res')
+                res.innerHTML = `<p>${n1} x ${n2} = <strong>${mult}</strong>`
+            }
+
+            function dividir() {
+                var n1 = window.document.querySelector('input#txtn1')
+                var n1 = Number(txtn1.value)
+                var n2 = window.document.querySelector('input#txtn2')
+                var n2 = Number(txtn2.value)
+                var divide = n1 / n2
+                var res = window.document.querySelector('div#res')
+                res.innerHTML = `<p>${n1} / ${n2} = <strong>${divide}</strong></p>`
+            }
+
+
+        </script>
     
 </body>
 </html>
