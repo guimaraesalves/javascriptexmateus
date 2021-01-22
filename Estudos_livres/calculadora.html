@@ -9,6 +9,7 @@
           body {
             font: normal 18pt Arial;
             background-color: paleturquoise;
+            text-align: center;
         }
 
         input {
@@ -24,12 +25,13 @@
 <body>
     
         <h1>Calculadora JavaScript</h1>
-        <p><strong>Primeiro Número:</strong>    <input type="number" name="txtn1" id="txtn1"></p> 
-        <P><strong>Segundo Número:</strong>     <input type="number" name='txtn2' id="txtn2"></P>
+        <p><strong>Primeiro Número:</strong><input type="number" name="txtn1" id="txtn1"></p> 
+        <P><strong>Segundo  Número:</strong><input type="number" name='txtn2' id="txtn2"></P>
         <P><input type="button" value="+" onclick="somar()">
         <input type="button" value="-" onclick="subtrair()">
         <input type="button" value="x" onclick="multiplicar()">
         <input type="button" value="/" onclick="dividir()">
+        <input type="button" value="x**y" onclick="elevar()">
     
 
     <div id='res'>
@@ -76,6 +78,16 @@
                 var divide = n1 / n2
                 var res = window.document.querySelector('div#res')
                 res.innerHTML = `<p>${n1} / ${n2} = <strong>${divide}</strong></p>`
+            }
+
+            function elevar() {
+                var n1 = window.document.querySelector('input#txtn1')
+                var n2 = window.document.querySelector('input#txtn2')
+                var n1 = Number(txtn1.value)
+                var n2 = Number(txtn2.value)
+                var pot = n1 ** n2
+                var res = window.document.querySelector('div#res')
+                res.innerHTML = `<p>${n1} elevado à ${n2} = <strong>${pot}</strong></p>`
             }
 
 
