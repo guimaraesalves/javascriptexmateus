@@ -16,7 +16,14 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.342);
+    
 
+}
+
+div {
+    text-align: center;
+    padding: 9px;
+    
 }
 
 footer {
@@ -24,3 +31,4 @@ footer {
     text-align: center;
     font-style: italic;
 }
+
