@@ -6,11 +6,6 @@ do{
 } while (c <= 12)
 
 
-
-
-
-
-
 // Teste no início
 /* 
 var c = 1
