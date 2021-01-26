@@ -40,5 +40,13 @@ var questions = [{
     "option3": "Third generation computer",
     "option4": "Fourth generation computer",
     "answer": "1"
+  }, {
+    "question": "RGB é referente a quais cores?",
+    "option1": "First generation computer",
+    "option2": "Second generation computer",
+    "option3": "Third generation computer",
+    "option4": "Fourth generation computer",
+    "answer": "1"
   }
+
 ]
