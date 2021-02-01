@@ -19,6 +19,10 @@ section {
 
 }
 
+select#flista {
+    width: 210px;
+}
+
 footer {
     color: white;
     text-align: center;
