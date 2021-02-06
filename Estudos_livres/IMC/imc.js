@@ -7,9 +7,10 @@ function imc () {
     const altura = document.getElementById('altura').value;
     const peso = document.getElementById('peso').value;
     const resultado = document.getElementById('resultado');
-    var imc = peso / (altura * altura);
+    
 
     if (nome !== '' && altura !== '' && peso !== '') {
+        var imc = (peso / (altura * altura));
         
         if (imc <= 18.5){
             alert("Magrela [magreza]")
