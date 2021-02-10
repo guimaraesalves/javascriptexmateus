@@ -10,29 +10,31 @@ function imc () {
     
 
     if (nome !== '' && altura !== '' && peso !== '') {
-        var imc = (peso / (altura * altura));
-        
-        if (imc <= 18.5){
-            alert("Magrela [magreza]")
-        } 
-        if (18.5 < imc <= 24.9) {
-            alert("Tá bem hein? [normal]")
-        }
-        if (25,0 < imc <= 29.90){
-            alert("Gordinho [sobrepeso]")
-        }
-        if (30.0 < imc < 39.9){
-            alert("Balofo! [obesidade]")
-        }
-        if(imc > 40) {
-            alert("Ô baleia! Você vai Morrer![obesidade grave]")
-        }
+        const imc = (peso / (altura * altura)).toFixed(2);
 
+        resultado.textContent = imc;
+        let classificacao = '';
+
+        if (imc < 18.5){
+            classificacao = 'abaixo do peso.';            
+        }else if (imc < 25) {
+            classificacao = 'com peso ideal. Parabéns!!!';
+        }else if (imc < 30) {
+            classificacao = 'levemente acima do peso.';
+        }else if (imc < 35) {
+            classificacao = 'com obesidade grau I.';
+        }else if (imc < 40){
+            classificacao = 'com obesidade grau II.';
+        }else{
+            classificacao = 'com obesidade grau III. Cuidado!!!'
+        }
+        
+        resultado.textContent = `${nome} seu IMC é ${imc} e você está ${classificacao}`
 
 
 
     }else{
-        alert ("Preencher todos os campos!!")
+        resultado.textContent = "Preencher todos os campos!!";
     }
     
 
