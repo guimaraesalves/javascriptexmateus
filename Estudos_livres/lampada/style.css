@@ -8,3 +8,9 @@ button{
     width: 80px;;
 }
 
+footer {
+    color: blue;
+    text-align: center;
+    font-style: italic;
+}
+
