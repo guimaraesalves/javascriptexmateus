@@ -1,0 +1,21 @@
+body {
+    background-color: #151515;
+}
+
+
+
+
+div {
+    background: url(autoPeB.png) no-repeat center;
+    background-size: cover; 
+    width: 500px;
+
+    -webkit-background-clip: text;      
+    color: rgb(0, 0, 255, .15);  
+    transition: 200ms all ease-in-out;
+    font-size: 9px;  
+}
+
+div:hover {
+    color: #cecece;
+}
